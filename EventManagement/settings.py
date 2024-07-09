@@ -88,3 +88,23 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Configuración de archivos estáticos (Static files)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+# Configuración de autenticación de Django
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
+# Configuración de correos electrónicos (Email settings)
+# Aquí configura tu servidor de correo SMTP si necesitas enviar correos desde Django.
+
+# Configuración de logging (Registro)
+# Define cómo quieres manejar los registros de Django. Puedes configurar niveles de registro y destinos.
+
+# Configuración personalizada
+# Si tienes configuraciones adicionales específicas para tu proyecto, puedes agregarlas aquí.
+
